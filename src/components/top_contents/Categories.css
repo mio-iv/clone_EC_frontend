@@ -1,0 +1,31 @@
+/* .container {
+	list-style: none;   /* リストのすべてのスタイルプロパティ */
+	/* margin: 1em 8em;    /* 要素の外側に余白 */
+    /* background: #e14040;
+} */
+.container {
+    background: #ffffff;
+    display: flex;            /* Flexbox を適用 */
+    flex: auto;
+    justify-content: space-evenly; /* 子要素を均等に配置 */
+    list-style-type: none;
+    margin: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+
+}
+.container::after {
+	content: "";
+	display: block;
+	clear: both;    /* ボックスの回り込みを解除 */
+}
+.container li {
+	display: block;
+    padding: 1em 3em 1em;   /* 要素の内側に余白 */
+    margin: 1em 0;            /* 要素の外側に余白 */
+	text-decoration: none;
+	color: #333;
+	background: #FFDC00;
+    flex: 1;                  /* 各 <li> 要素が均等に幅を持つように設定 */
+    text-align: center;       /* 中央揃え */
+}

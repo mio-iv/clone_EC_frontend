@@ -1,0 +1,26 @@
+/* デフォルト */
+.embla {
+    overflow: hidden;
+    width: 100%;
+}
+
+.embla__container {
+    display: flex;
+}
+
+.embla__slide {
+    position: relative;
+    min-width: 50%; /* 1スライドの幅を画面幅いっぱいに設定 */
+    padding: 10px;
+    margin: 10px;
+    background-color: #eee;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* 小画面（スマートフォン） */
+@media (min-width: 900px) {
+    .embla__slide {
+        font-size: 24px;
+    }
+}

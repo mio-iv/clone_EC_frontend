@@ -1,0 +1,60 @@
+/* 
+.category-heading {
+    background: transparent;
+    padding: .4em .8em;
+    margin: 0 0 1em;
+    margin: 1em 5.3em;
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    border-left: .2083em solid #003EFF;
+    text-align: left;
+  }
+  */
+
+/* デフォルト */
+.box {
+  width: 100%; /* モバイルデバイス用 */
+}
+
+.category-heading {
+  font-size: 24px;
+}
+ul {
+  list-style: none; /* 黒点を消す */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  
+  overflow-x: auto; /* 横スクロールを可能にする */
+}
+
+ul li {
+  margin-right: 16px; /* アイテム間の余白を調整 */
+}
+
+ul img {
+  width: 150px; /* 画像サイズを調整 */
+  height: auto;
+}
+
+/* 小画面（スマートフォン） */
+@media (min-width: 600px) {
+  .responsive-box {
+    width: 80%; /* 小さい画面（600px以上） */
+  }
+}
+
+/* タブレット */
+@media (min-width: 900px) {
+  .responsive-box {
+    width: 60%; /* 中程度の画面（900px以上） */
+  }
+}
+
+/* デスクトップ */
+@media (min-width: 1200px) {
+  .responsive-box {
+    width: 40%; /* 大きい画面（1200px以上） */
+  }
+}
